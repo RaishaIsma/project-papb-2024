@@ -1,0 +1,92 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Kalender untuk memilih tanggal -->
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- LinearLayout untuk setiap entry catatan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp">
+
+            <!-- Tanggal yang dipilih -->
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05 Sep, 2024"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Editable text untuk konten catatan -->
+            <EditText
+                android:id="@+id/editTextNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your note here"
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+                android:background="@null"
+                android:paddingTop="8dp" />
+
+            <!-- Konten catatan yang disimpan -->
+            <TextView
+                android:id="@+id/textViewNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your saved note will appear here"
+                android:paddingTop="8dp"
+                android:textSize="16sp" />
+
+            <!-- Tombol untuk menyimpan dan mengedit catatan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:paddingTop="8dp">
+
+                <!-- Tombol untuk menyimpan catatan -->
+                <Button
+                    android:id="@+id/buttonSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textColor="@android:color/white" />
+
+                <!-- Spacer untuk jarak antar tombol -->
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+                <!-- Tombol untuk mengedit catatan -->
+                <Button
+                    android:id="@+id/buttonEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
