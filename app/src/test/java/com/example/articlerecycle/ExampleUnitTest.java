@@ -1,4 +1,4 @@
-package com.pam.articleapp;
+package com.example.articlerecycle;
 
 import org.junit.Test;
 
