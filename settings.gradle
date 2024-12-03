@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ArticleRecycle"
+rootProject.name = "ArticleApp"
 include ':app'
