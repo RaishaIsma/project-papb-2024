@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna dasar aplikasi -->
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#3700B3</color> <!-- Ungu lebih gelap -->
+    <color name="red_100">#B30000</color> <!-- Merah gelap -->
+    <color name="teal_200">#03DAC5</color>
+
+    <!-- Warna teks -->
+    <color name="white">#FFFFFF</color> <!-- Putih -->
+
+    <!-- Warna latar -->
+    <color name="background_white">#FFFFFF</color> <!-- Latar belakang -->
+
+    <!-- Warna tambahan -->
+    <color name="black">#000000</color>
+</resources>

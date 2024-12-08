@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".relog.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnArtikel"
+        android:layout_width="186dp"
+        android:layout_height="82dp"
+        android:backgroundTint="@color/purple_500"
+        android:drawableTop="@drawable/baseline_article_24"
+        android:drawablePadding="8dp"
+        android:padding="10dp"
+        android:text="Artikel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMoodTracker"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <Button
+        android:id="@+id/btnMyDiary"
+        android:layout_width="186dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="260dp"
+        android:backgroundTint="@color/purple_500"
+        android:drawableTop="@drawable/baseline_book_24"
+        android:drawablePadding="8dp"
+        android:padding="10dp"
+        android:text="MyDiary"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCalendar"
+        app:layout_constraintTop_toBottomOf="@+id/btnMoodTracker" />
+
+    <Button
+        android:id="@+id/btnCalendar"
+        android:layout_width="186dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="260dp"
+        android:backgroundTint="@color/purple_500"
+        android:drawableTop="@drawable/baseline_calendar_month_24"
+        android:drawablePadding="8dp"
+        android:padding="10dp"
+        android:text="Kalender"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMyDiary"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMoodTracker" />
+
+    <Button
+        android:id="@+id/btnMoodTracker"
+        android:layout_width="186dp"
+        android:layout_height="82dp"
+        android:backgroundTint="@color/purple_500"
+        android:drawableTop="@drawable/baseline_local_florist_24"
+        android:drawablePadding="8dp"
+        android:padding="10dp"
+        android:text="MoodTracker"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnArtikel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:drawableLeft="@drawable/baseline_home_24"
+        android:drawablePadding="15dp"
+        android:text="Homepage"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

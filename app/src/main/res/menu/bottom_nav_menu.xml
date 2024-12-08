@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bn_article"
+        android:title="Article"
+        android:icon="@drawable/baseline_article_24"/>
+    <item
+        android:id="@+id/bn_calendar"
+        android:title="Calendar"
+        android:icon="@drawable/baseline_calendar_month_24"/>
+    <item
+        android:id="@+id/bn_diary"
+        android:title="Diary"
+        android:icon="@drawable/baseline_book_24"/>
+</menu>

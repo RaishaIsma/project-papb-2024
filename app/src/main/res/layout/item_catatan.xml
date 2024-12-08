@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Judul"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Tanggal -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvJudul"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="8dp"
+            android:text="Tanggal"
+            android:textSize="14sp" />
+
+        <!-- Waktu -->
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvJudul"
+            android:layout_toEndOf="@id/tvDate"
+            android:layout_marginStart="8dp"
+            android:text="Waktu"
+            android:textSize="14sp" />
+
+        <!-- Konten -->
+        <TextView
+            android:id="@+id/tvKonten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDate"
+            android:text="Konten yang panjang akan terpotong di sini"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
